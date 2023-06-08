@@ -10,11 +10,15 @@ import lombok.extern.slf4j.Slf4j;
  * @description ：自动类型转换
  */
 @Slf4j
-public class se01 {
+public class Se01 {
     public static void main(String[] args) {
-        int i = 0;
-        log.info("测试{}", i);
+        int count = 0;
+        for(int i = 0;i < 100;i++)
+        {
+            count = ++count;
+        }
+        System.out.println("count = "+count);
 
-        System.out.println("11");
+
     }
 }
