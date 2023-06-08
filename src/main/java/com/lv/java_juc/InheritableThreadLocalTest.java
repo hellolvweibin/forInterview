@@ -16,7 +16,7 @@ public class InheritableThreadLocalTest {
         threadLocal.set("不擅技术");
         log.info("主线程");
         //子线程
-        Thread thread = new Thread(){
+        Thread thread = new Thread() {
             @Override
             public void run() {
                 super.run();

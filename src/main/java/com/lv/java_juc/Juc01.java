@@ -12,9 +12,10 @@ import lombok.extern.slf4j.Slf4j;
 public class Juc01 {
     //创建一个ThreadLocal变量
     public static ThreadLocal<String> localVariable = new ThreadLocal<>();
+
     public static void main(String[] args) {
         localVariable.set("张三");
-        log.info("{}",localVariable.get());
+        log.info("{}", localVariable.get());
         localVariable.remove();
 
     }
