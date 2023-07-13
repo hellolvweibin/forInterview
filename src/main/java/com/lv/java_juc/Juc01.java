@@ -17,6 +17,7 @@ public class Juc01 {
         localVariable.set("张三");
         log.info("{}", localVariable.get());
         localVariable.remove();
+        System.gc();
 
     }
 

@@ -1,5 +1,7 @@
 package com.lv.javahashmap;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -10,6 +12,7 @@ import java.util.TreeMap;
  * @Date ：2023/6/1 14:41
  * @description ：
  */
+@Slf4j
 public class Map01 {
     public static void main(String[] args) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
@@ -23,7 +26,7 @@ public class Map01 {
         map.put(7,"生物");
         map.put(8,"化学");
         for (Integer integer : map.keySet()) {
-            System.out.println(map.get(integer));
+            log.info(map.get(integer));
         }
 
     }
